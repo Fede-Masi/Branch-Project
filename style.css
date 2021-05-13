@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(49, 46, 46);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.box{
+    width: 300px;
+    height: 350px;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+.box input[type="text"],input[type="password"]{
+    width: 100%;
+    height: 7%;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid turquoise;
+    border-top: 2px solid tomato;
+}
+.box input[type="submit"]{
+    outline: none;
+    width: 100%;
+    height: 10%;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.box input[type="submit"]:hover{
+    cursor: pointer;
+    background: #fff;
+    color: rgb(0, 0, 0);
+}
+header{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    height: 10%;
+}
+header h1{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+}
+button{
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background: #fff;
+    border: 2px solid #fff;
+    color: #000;
+}
+button:hover{
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
