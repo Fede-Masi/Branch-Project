@@ -1,7 +1,7 @@
        <?php
         if(isset($_POST["login"])) {
             if(!isset($_POST["username"]) || !isset($_POST["password"])) {
-                die("Inserisci tutti i dati!");
+                die("Compila tutti i campi!");
             } else {
                 $username = htmlentities($_POST["username"], ENT_HTML5, 'UTF-8');
                 $password = htmlentities($_POST["password"], ENT_HTML5, 'UTF-8');
@@ -31,16 +31,24 @@
     <head>
       <meta charset="UTF-8">
       <title>Es PHP e Sessioni</title>
-        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <form class="box" action="Prova.php" method="POST">
           <h1>Login</h1>
+          <fieldset>
+            <legend>Inserisci Dati</legend>
           <br>
-            <h2>Username</h2>
+          <ul>
+            <li>
+            <label><h2>Username</h2></label>
             <input type="text" name="username" <?php if(isset($_POST["login"])) {echo"value = '$username'";}?>required>
-              <h2>Password</h2>
+            </li>
+            <li>
+              <label><h2>Password</h2></label>
               <input type="password" name="password" value="" required>
+            </li>
+          </ul>
+          </fieldset>
               <br>
             <br>
           <br>

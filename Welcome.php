@@ -5,7 +5,6 @@
   <html lang="en" dir="ltr">
     <head>
       <meta charset="UTF-8">
-      <link rel="stylesheet" href="style.css">
       <title>Visualizzazione</title>
     </head>
     <body>
